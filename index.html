@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOVIZ — Conversion System for Creators & Startups</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">FOV<span>IZ</span></a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Start Project</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-video-wrap">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-grain"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge" data-reveal>
+        <span class="badge-dot"></span>
+        Premium Creative Agency
+      </div>
+      <h1 class="hero-headline" data-reveal>
+        Your Content Isn't Failing.<br />
+        <span class="glow-text">It's Just Not Converting.</span>
+      </h1>
+      <p class="hero-sub" data-reveal>
+        We build cinematic visuals and high-performance websites<br />
+        that turn views into paying clients.
+      </p>
+      <div class="hero-actions" data-reveal>
+        <a href="#contact" class="btn-primary pulse-glow">Launch My Brand</a>
+        <a href="#work" class="btn-ghost">See Our Work</a>
+      </div>
+      <div class="hero-stats" data-reveal>
+        <div class="hero-stat">
+          <span class="stat-num" data-count="320">0</span><span>%</span>
+          <span class="stat-label">Avg. Engagement Lift</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-count="210">0</span><span>%</span>
+          <span class="stat-label">Conversion Growth</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-count="5">0</span><span>x</span>
+          <span class="stat-label">Audience Multiplier</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust-strip">
+    <div class="trust-label">Trusted by creators &amp; startups worldwide</div>
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <div class="marquee-item">NEXLIFY</div>
+        <div class="marquee-item">VAULTWAVE</div>
+        <div class="marquee-item">ORBITA</div>
+        <div class="marquee-item">LUMINARY CO.</div>
+        <div class="marquee-item">DRIFTHAUS</div>
+        <div class="marquee-item">PRISMATIC</div>
+        <div class="marquee-item">STRATOGEN</div>
+        <div class="marquee-item">NOVATHREAD</div>
+        <div class="marquee-item">ZEROTHINK</div>
+        <div class="marquee-item">CLOUDSHIFT</div>
+        <div class="marquee-item">NEXLIFY</div>
+        <div class="marquee-item">VAULTWAVE</div>
+        <div class="marquee-item">ORBITA</div>
+        <div class="marquee-item">LUMINARY CO.</div>
+        <div class="marquee-item">DRIFTHAUS</div>
+        <div class="marquee-item">PRISMATIC</div>
+        <div class="marquee-item">STRATOGEN</div>
+        <div class="marquee-item">NOVATHREAD</div>
+        <div class="marquee-item">ZEROTHINK</div>
+        <div class="marquee-item">CLOUDSHIFT</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE DATA / ANALYTICS -->
+  <section class="analytics" id="results">
+    <div class="container">
+      <div class="section-label" data-reveal>Live Performance Data</div>
+      <h2 class="section-title" data-reveal>Results We Actually <span class="glow-text">Deliver</span></h2>
+      <p class="section-sub" data-reveal>Real-time growth metrics from active client campaigns</p>
+
+      <div class="analytics-grid">
+        <div class="analytics-chart-wrap glass-card" data-reveal>
+          <div class="chart-header">
+            <div class="chart-title">Engagement Growth</div>
+            <div class="chart-badge live">● LIVE</div>
+          </div>
+          <canvas id="growthChart" width="500" height="200"></canvas>
+          <div class="chart-metrics">
+            <div class="chart-metric">
+              <span class="metric-val cyan">+320%</span>
+              <span class="metric-label">Engagement</span>
+            </div>
+            <div class="chart-metric">
+              <span class="metric-val blue">+210%</span>
+              <span class="metric-label">Conversion</span>
+            </div>
+            <div class="chart-metric">
+              <span class="metric-val cyan">5x</span>
+              <span class="metric-label">Audience</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="analytics-stats">
+          <div class="stat-card glass-card" data-reveal>
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 17l6-6 4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="stat-card-body">
+              <div class="stat-card-num" data-count="320">0</div>
+              <div class="stat-card-pct">%</div>
+            </div>
+            <div class="stat-card-label">Average Engagement Increase</div>
+            <div class="stat-progress"><div class="stat-bar" data-width="92"></div></div>
+          </div>
+
+          <div class="stat-card glass-card" data-reveal>
+            <div class="stat-icon blue">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="stat-card-body">
+              <div class="stat-card-num blue" data-count="210">0</div>
+              <div class="stat-card-pct blue">%</div>
+            </div>
+            <div class="stat-card-label">Conversion Rate Growth</div>
+            <div class="stat-progress"><div class="stat-bar blue" data-width="78"></div></div>
+          </div>
+
+          <div class="stat-card glass-card" data-reveal>
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div class="stat-card-body">
+              <div class="stat-card-num" data-count="5">0</div>
+              <div class="stat-card-pct">x</div>
+            </div>
+            <div class="stat-card-label">Audience Size Multiplier</div>
+            <div class="stat-progress"><div class="stat-bar" data-width="85"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-label" data-reveal>What We Build</div>
+      <h2 class="section-title" data-reveal>Our <span class="glow-text">Arsenal</span></h2>
+      <p class="section-sub" data-reveal>Every service is engineered to convert attention into revenue.</p>
+
+      <div class="services-grid">
+        <div class="service-card glass-card tilt-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><polygon points="10,8 16,12 10,16" fill="currentColor"/></svg>
+          </div>
+          <div class="service-number">01</div>
+          <h3 class="service-title">Video Editing</h3>
+          <p class="service-desc">Ads, Reels, YouTube — Cinematic cuts that stop the scroll and force the click.</p>
+          <ul class="service-list">
+            <li>YouTube & Reels Editing</li>
+            <li>Ad Creative Production</li>
+            <li>Color Grading & Sound</li>
+          </ul>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card glass-card tilt-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="service-number">02</div>
+          <h3 class="service-title">Motion Graphics & Thumbnails</h3>
+          <p class="service-desc">Eye-hijacking visuals engineered for maximum CTR and instant brand recall.</p>
+          <ul class="service-list">
+            <li>Custom Motion Design</li>
+            <li>A/B Tested Thumbnails</li>
+            <li>Brand Identity Kits</li>
+          </ul>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card glass-card tilt-card featured" data-reveal>
+          <div class="service-badge">Most Popular</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M9 9h6M9 12h6M9 15h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="service-number">03</div>
+          <h3 class="service-title">Production-Level Websites</h3>
+          <p class="service-desc">Full-stack digital experiences built to convert at every pixel.</p>
+          <ul class="service-list">
+            <li>Full Stack Development</li>
+            <li>CRO-Optimized Design</li>
+            <li>Performance-First Build</li>
+          </ul>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card glass-card tilt-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 17.5h7M17.5 14v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="service-number">04</div>
+          <h3 class="service-title">Funnel Design Systems</h3>
+          <p class="service-desc">End-to-end conversion architectures that qualify, warm, and close leads on autopilot.</p>
+          <ul class="service-list">
+            <li>Sales Funnel Architecture</li>
+            <li>Email Sequences</li>
+            <li>Landing Page Systems</li>
+          </ul>
+          <div class="service-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="work">
+    <div class="container">
+      <div class="section-label" data-reveal>Proof of Concept</div>
+      <h2 class="section-title" data-reveal><span class="glow-text">Results</span> We've Created</h2>
+      <p class="section-sub" data-reveal>Every project is a conversion case study.</p>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card" data-reveal>
+          <div class="portfolio-thumb">
+            <img src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?w=600&q=80" alt="Project 1" loading="lazy" />
+            <div class="portfolio-overlay">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+              <div class="portfolio-category">Video Editing</div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">NEXLIFY Launch Campaign</h3>
+            <div class="portfolio-result">From 2k → 120k views in 7 days</div>
+            <div class="portfolio-tags"><span>Reels</span><span>Ads</span></div>
+          </div>
+        </div>
+
+        <div class="portfolio-card large" data-reveal>
+          <div class="portfolio-thumb">
+            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?w=800&q=80" alt="Project 2" loading="lazy" />
+            <div class="portfolio-overlay">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+              <div class="portfolio-category">Website</div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">Orbita SaaS Platform</h3>
+            <div class="portfolio-result">+300% CTR improvement in 30 days</div>
+            <div class="portfolio-tags"><span>Web</span><span>Funnel</span></div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-reveal>
+          <div class="portfolio-thumb">
+            <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?w=600&q=80" alt="Project 3" loading="lazy" />
+            <div class="portfolio-overlay">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+              <div class="portfolio-category">Branding</div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">Luminary Brand Identity</h3>
+            <div class="portfolio-result">5x audience growth in 60 days</div>
+            <div class="portfolio-tags"><span>Identity</span><span>Motion</span></div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-reveal>
+          <div class="portfolio-thumb">
+            <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?w=600&q=80" alt="Project 4" loading="lazy" />
+            <div class="portfolio-overlay">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+              <div class="portfolio-category">Funnel</div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">Stratogen Sales System</h3>
+            <div class="portfolio-result">$0 → $85k MRR in 90 days</div>
+            <div class="portfolio-tags"><span>Funnel</span><span>CRO</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section class="case-studies">
+    <div class="container">
+      <div class="section-label" data-reveal>Deep Dives</div>
+      <h2 class="section-title" data-reveal>Case <span class="glow-text">Studies</span></h2>
+      <p class="section-sub" data-reveal>Problem. Solution. Proof.</p>
+
+      <div class="cases-grid">
+        <div class="case-card glass-card" data-reveal>
+          <div class="case-num">01</div>
+          <div class="case-tag">YouTube Channel</div>
+          <h3 class="case-title">Drifthaus Media</h3>
+          <div class="case-flow">
+            <div class="case-step">
+              <span class="step-label problem">Problem</span>
+              <p>4,200 subscribers, 1.2% CTR, no monetization despite 2 years of consistent uploads.</p>
+            </div>
+            <div class="case-step">
+              <span class="step-label solution">Solution</span>
+              <p>Full thumbnail system redesign, hook engineering, video structure overhaul, and custom channel art.</p>
+            </div>
+            <div class="case-step">
+              <span class="step-label result">Result</span>
+              <p>4.2K → 67K subscribers in 45 days. CTR jumped to 8.7%. Channel monetized within 6 weeks.</p>
+            </div>
+          </div>
+          <div class="case-metrics">
+            <div class="case-metric"><span>15x</span>Subscriber Growth</div>
+            <div class="case-metric"><span>+626%</span>CTR Increase</div>
+          </div>
+        </div>
+
+        <div class="case-card glass-card" data-reveal>
+          <div class="case-num">02</div>
+          <div class="case-tag">SaaS Startup</div>
+          <h3 class="case-title">Vaultwave App</h3>
+          <div class="case-flow">
+            <div class="case-step">
+              <span class="step-label problem">Problem</span>
+              <p>High traffic (18k monthly), but 0.8% conversion rate. Investors wanted proof before Series A.</p>
+            </div>
+            <div class="case-step">
+              <span class="step-label solution">Solution</span>
+              <p>Complete landing page rebuild with conversion-first architecture, trust signals, and funnel automation.</p>
+            </div>
+            <div class="case-step">
+              <span class="step-label result">Result</span>
+              <p>Conversion rate hit 4.3% in 3 weeks. MRR grew from $12k to $58k. Series A closed successfully.</p>
+            </div>
+          </div>
+          <div class="case-metrics">
+            <div class="case-metric"><span>437%</span>Conversion Lift</div>
+            <div class="case-metric"><span>4.8x</span>MRR Growth</div>
+          </div>
+        </div>
+
+        <div class="case-card glass-card" data-reveal>
+          <div class="case-num">03</div>
+          <div class="case-tag">Content Creator</div>
+          <h3 class="case-title">Zerothink Studios</h3>
+          <div class="case-flow">
+            <div class="case-step">
+              <span class="step-label problem">Problem</span>
+              <p>Creator with 80k followers but no digital product. Ad revenue alone wasn't sustainable.</p>
+            </div>
+            <div class="case-step">
+              <span class="step-label solution">Solution</span>
+              <p>Built complete sales funnel, course landing page, email nurture sequence, and launch video ads.</p>
+            </div>
+            <div class="case-step">
+              <span class="step-label result">Result</span>
+              <p>$0 to $140k in product revenue in first 30 days. Email list grew to 12,400 subscribers.</p>
+            </div>
+          </div>
+          <div class="case-metrics">
+            <div class="case-metric"><span>$140k</span>Launch Revenue</div>
+            <div class="case-metric"><span>12.4k</span>Email Subs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-label" data-reveal>The System</div>
+      <h2 class="section-title" data-reveal>Global <span class="glow-text">Creative Network</span></h2>
+      <p class="section-sub team-tagline" data-reveal>Distributed creative system operating across time zones</p>
+
+      <div class="team-grid">
+        <div class="team-card glass-card" data-reveal>
+          <div class="team-avatar">
+            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?w=200&h=200&fit=crop" alt="Alex Chen" loading="lazy" />
+            <div class="team-glow"></div>
+          </div>
+          <div class="team-info">
+            <h4 class="team-name">Alex Chen</h4>
+            <div class="team-role">Creative Director</div>
+            <div class="team-location">● San Francisco, USA</div>
+          </div>
+        </div>
+
+        <div class="team-card glass-card" data-reveal>
+          <div class="team-avatar">
+            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?w=200&h=200&fit=crop" alt="Mia Torres" loading="lazy" />
+            <div class="team-glow"></div>
+          </div>
+          <div class="team-info">
+            <h4 class="team-name">Mia Torres</h4>
+            <div class="team-role">Head of Conversion</div>
+            <div class="team-location">● Barcelona, Spain</div>
+          </div>
+        </div>
+
+        <div class="team-card glass-card" data-reveal>
+          <div class="team-avatar">
+            <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?w=200&h=200&fit=crop" alt="Jordan Osei" loading="lazy" />
+            <div class="team-glow"></div>
+          </div>
+          <div class="team-info">
+            <h4 class="team-name">Jordan Osei</h4>
+            <div class="team-role">Lead Motion Designer</div>
+            <div class="team-location">● Lagos, Nigeria</div>
+          </div>
+        </div>
+
+        <div class="team-card glass-card" data-reveal>
+          <div class="team-avatar">
+            <img src="https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?w=200&h=200&fit=crop" alt="Yuki Nakamura" loading="lazy" />
+            <div class="team-glow"></div>
+          </div>
+          <div class="team-info">
+            <h4 class="team-name">Yuki Nakamura</h4>
+            <div class="team-role">Full Stack Engineer</div>
+            <div class="team-location">● Tokyo, Japan</div>
+          </div>
+        </div>
+
+        <div class="team-card glass-card" data-reveal>
+          <div class="team-avatar">
+            <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?w=200&h=200&fit=crop" alt="Ravi Sharma" loading="lazy" />
+            <div class="team-glow"></div>
+          </div>
+          <div class="team-info">
+            <h4 class="team-name">Ravi Sharma</h4>
+            <div class="team-role">Funnel Strategist</div>
+            <div class="team-location">● Mumbai, India</div>
+          </div>
+        </div>
+
+        <div class="team-card glass-card" data-reveal>
+          <div class="team-avatar">
+            <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?w=200&h=200&fit=crop" alt="Sofia Mensah" loading="lazy" />
+            <div class="team-glow"></div>
+          </div>
+          <div class="team-info">
+            <h4 class="team-name">Sofia Mensah</h4>
+            <div class="team-role">Brand Strategist</div>
+            <div class="team-location">● Berlin, Germany</div>
+          </div>
+        </div>
+
+        <div class="team-card glass-card" data-reveal>
+          <div class="team-avatar">
+            <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?w=200&h=200&fit=crop" alt="Carlos Vega" loading="lazy" />
+            <div class="team-glow"></div>
+          </div>
+          <div class="team-info">
+            <h4 class="team-name">Carlos Vega</h4>
+            <div class="team-role">Video Director</div>
+            <div class="team-location">● Mexico City, MX</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-final" id="contact">
+    <div class="cta-bg-glow"></div>
+    <div class="container cta-inner">
+      <div class="section-label white" data-reveal>Ready to Dominate?</div>
+      <h2 class="cta-headline" data-reveal>
+        You Don't Need More Content.<br />
+        <span class="glow-text">You Need Results.</span>
+      </h2>
+      <p class="cta-sub" data-reveal>
+        Every day you wait, someone else is taking your audience's attention.<br />
+        Let's build your conversion system — starting now.
+      </p>
+      <div class="cta-form-wrap" data-reveal>
+        <form class="cta-form" id="contactForm">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <select>
+            <option value="" disabled selected>What do you need?</option>
+            <option>Video Editing</option>
+            <option>Motion Graphics</option>
+            <option>Website Development</option>
+            <option>Funnel System</option>
+            <option>Full Package</option>
+          </select>
+          <button type="submit" class="btn-primary pulse-glow full-width">Start My Project</button>
+        </form>
+      </div>
+      <div class="cta-trust" data-reveal>
+        <span>No contracts.</span>
+        <span>Results or refund.</span>
+        <span>48hr response.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">FOV<span>IZ</span></div>
+      <div class="footer-tagline">Turning attention into revenue since 2019.</div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-copy">© 2026 FOVIZ. All rights reserved. Built for elite creators worldwide.</div>
+    </div>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
